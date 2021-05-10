@@ -9,19 +9,28 @@
 </head>
 
 <body>
+<header>
     <div class="js-clock">
-        <h1>00:00</h1>
+        <h3 class="header__day"></h3>
+        <h1 class="header__time">00:00</h1>
     </div>
+</header>
+<main>
+    <div class="main__screen">
     <form class="js-form form">
-        <input type="text" placeholder="What is your name?"/>
+        <input class="js-form__input" type="text" placeholder="What is your name?"/>
     </form>
     <h4 class="js-greetings greetings"></h4>
     <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do"/>
+        <input class="js-toDoForm__input" type="text" placeholder="Write a to do"/>
     </form>
     <ul class="js-toDoList">
     </ul>
+</div >
+</main>
+<footer>
     <span class="js-weather"></span>
+</footer>
 <script src="clock.js"></script>  
 <script src="gretting.js"></script>  
 <script src="todo.js"></script>    
