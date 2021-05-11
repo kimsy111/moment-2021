@@ -23,7 +23,8 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Hello ${text}`;
+  greeting.innerText = `Hello ${text} 
+  What is your plan for today?`;
 }
 function loadName() {
   const currentUser = localStorage.getItem(USER_LS);

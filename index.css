@@ -5,32 +5,73 @@ body{
     font-family:  'Open Sans', sans-serif;
 }
 
+.js-form input{
+    background-color: rgba(0,0,0,0);
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-out;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.js-form input::placeholder,
+.js-toDoForm input::placeholder{
+    color: black;
+}
+.js-toDoForm{
+    margin: 35px 0px;
+}
+.js-toDoForm input{
+    background-color: rgba(0,0,0,0);
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.js-form input:focus,
+.js-toDoForm input:focus
+{
+    outline: none;
+}
+
 .header{
     display: flex;
     justify-content: center;
     padding: 5px 3px;
 }
-
 .js-clock{
 text-align: right;
 }
 .main__screen{
     display: flex;
-    margin: 100px 0px;
+    margin: 70px 0px;
     text-align: center;
     flex-direction: column;
     align-items: center;
   
 }
-.js-greetings {
-    margin-bottom: 40px;
-    font-size:30px;
-    font-weight: 900;
+.showing{
+    animation: top 0.5s linear;
 }
-.js-form__input,
-.js-toDoForm__input{
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+@keyframes top {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }to{
+        opacity: 1;
+        transition: 0;
+    }
+}
+
+.greetings {
+    font-size: 1.5rem;
+}
+.sencond__screen{
+    margin: 10px 0px;
 }
 footer{
     position: fixed;
@@ -38,8 +79,10 @@ footer{
     width: 100%;
 }
 .js-weather{
+    box-sizing: border-box;
     display: block;
-    text-align: right;
+    font-size:20px;
+    font-weight: 600;
 }
 
 
@@ -70,7 +113,9 @@ to{
     opacity: 1;
 }
 }
-
+.js-toDoForm{
+    
+}
 
 
 
