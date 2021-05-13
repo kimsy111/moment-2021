@@ -113,8 +113,38 @@ to{
     opacity: 1;
 }
 }
-.js-toDoForm{
-    
+.js-toDoList{
+    padding-left: 0px;
+}
+li{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 100px;
+    background-color: rgba(0,0,0,0.2);
+}
+li>span{
+    font-size:18px;
+    font-weight: 600;
+}
+button{
+    margin-left: 60px;
+}
+
+@keyframes shakebutton{
+    0%{
+transform: none;
+    }
+50%{
+transform: translateY(-3px);
+}
+    100%{
+transform: none;
+    }
+}
+li>button:hover{
+    animation: shakebutton 0.8s ease-in-out infinite;
 }
 
 
