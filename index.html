@@ -21,11 +21,35 @@
         <input type="text" placeholder="What is your name?"/>
     </form>
     <h4 class="js-greetings greetings showing"></h4>
+
+    
     <form class="js-toDoForm">
         <input type="text" placeholder="+Write a to do"/>
     </form>
+
     <ul class="js-toDoList">
     </ul>
+
+    <div id="mysidenav" class="sidenav">
+    <a href="#" class="closebtn" onclick='closeNav()'>x</a>
+    <span>
+        <h2>Save Complete Plan</h2>
+    </span>
+    <ul class="js-completedList completed">  
+    </ul>
+    </div>
+    <span class="openmenu" onclick='openNav()'>
+        <i class="fa fa-angle-double-left fa-5" aria-hidden="true"></i> open
+    </span>
+    <script>
+		function openNav() {
+			document.getElementById('mysidenav').style.width = '450px';
+		}
+		function closeNav() {
+			document.getElementById('mysidenav').style.width = '0';
+		}
+	</script>
+
 </div>
 </main>
 <footer>
