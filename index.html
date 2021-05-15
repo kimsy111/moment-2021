@@ -20,6 +20,8 @@
     <form class="js-form form">
         <input type="text" placeholder="What is your name?"/>
     </form>
+</div>
+    <div class="toDoScreen suvscreen">
     <h4 class="js-greetings greetings showing"></h4>
 
     
@@ -33,7 +35,7 @@
     <div id="mysidenav" class="sidenav">
     <a href="#" class="closebtn" onclick='closeNav()'>x</a>
     <span>
-        <h2>Save Complete Plan</h2>
+        <h2 class="savetitle">Save Complete Plan</h2>
     </span>
     <ul class="js-completedList completed">  
     </ul>
@@ -43,22 +45,21 @@
     </span>
     <script>
 		function openNav() {
-			document.getElementById('mysidenav').style.width = '450px';
+			document.getElementById('mysidenav').style.width = '400px';
 		}
 		function closeNav() {
 			document.getElementById('mysidenav').style.width = '0';
 		}
 	</script>
-
 </div>
 </main>
 <footer>
     <span class="js-weather"></span>
 </footer>
-<script src="clock.js"></script>  
-<script src="gretting.js"></script>  
-<script src="todo.js"></script>    
-<script src="bg.js"></script>
-<script src="weather.js"></script>
+<script src="javascript/clock.js"></script>  
+<script src="javascript/gretting.js"></script>  
+<script src="javascript/todo.js"></script>    
+<script src="javascript/bg.js"></script>
+<script src="javascript/weather.js"></script>
 </body>
 </html>

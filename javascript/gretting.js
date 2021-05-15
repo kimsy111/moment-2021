@@ -4,6 +4,8 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
   SHOWING_CN = "showing";
 
+  const toDoScreen = document.querySelector(".toDoScreen");
+
 function saveName(text) {
   localStorage.setItem(USER_LS, text);
 }
@@ -23,6 +25,7 @@ function askForName() {
 function paintGreeting(text) {
   form.classList.remove(SHOWING_CN);
   greeting.classList.add(SHOWING_CN);
+  toDoScreen.classList.add(SHOWING_CN);
   greeting.innerText = `Hello ${text} 
   What is your plan for today?`;
 }
