@@ -30,7 +30,9 @@ body{
     color: black;
     border: none;
     border-bottom: 1px solid black;
+    font-size: 20px;
 }
+
 
 .js-form input:focus,
 .js-toDoForm input:focus
@@ -166,8 +168,8 @@ li>button:hover{
 }
 
 .sidenav {
-    height:100vh;
-    width: 400px;
+    height:100%;
+    width: 0;
     position: fixed;
     z-index:2;
     top: 0;
@@ -201,7 +203,7 @@ li>button:hover{
     color: gray;
 }
 .openmenu:hover {
-    color:rgb(0,154,200);
+    color:white;
     transition:0.5s ease-in-out;
 }
 .openmenu {

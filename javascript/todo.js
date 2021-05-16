@@ -48,8 +48,8 @@ function addCompleted(task) {
     const backBtn = document.createElement("button");
 
     span.innerText = task.text;
-    delBtn.innerText = "❌";
-    backBtn.innerText = "✅";
+    delBtn.innerText = "✅";
+    backBtn.innerText = "❌";
     li.appendChild(span);
     li.appendChild(delBtn);
     li.appendChild(backBtn);
