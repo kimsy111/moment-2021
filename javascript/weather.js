@@ -55,3 +55,18 @@ function init(){
  loadCoords();
 }
 init();
+
+function getLocation() {    
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, positionError);
+
+    } else {
+        hideLoadingDiv()
+        showError('Geolocation is not supported by this device')
+    }
+}
+
+function positionError() {
+    hideLoadingDiv()
+    showError('Geolocation is not enabled. Please enable to use this feature')
+}
